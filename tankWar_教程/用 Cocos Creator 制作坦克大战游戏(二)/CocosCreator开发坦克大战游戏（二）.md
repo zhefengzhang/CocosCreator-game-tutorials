@@ -109,7 +109,7 @@ module.exports = GameEnum;
 
 打开 CocosCreator 游戏引擎的编辑器，打开菜单 Project -> Project Settings...，选择 Group Manager 界面，对游戏的 Group 进行如下设置，并点击 Save 保存设置：
 
-![1571218274828](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571218274828.png)
+![1571218274828](./images/1571218274828.png)
 
  cc.game.groupList 负责记录着当前游戏的 group 分组数据，我们需要用到它。
 
@@ -121,15 +121,15 @@ module.exports = GameEnum;
 
 首先预览一下我布置好的游戏开始界面：
 
-![1571134226766](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571134226766.png)
+![1571134226766](./images/1571134226766.png)
 
 参考下图设置Canvas节点的Canvas组件：
 
-![1571135093072](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571135093072.png)
+![1571135093072](./images/1571135093072.png)
 
 根据设计分辨率，搭建游戏开始场景。参考下图的节点树添加节点：
 
-![1571135630608](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571135630608.png)
+![1571135630608](./images/1571135630608.png)
 
 该界面所需要的图集资源名称为 start 。
 
@@ -180,23 +180,23 @@ cc.Class({
 
 该用户组件的属性检查器界面绑定情况如下：
 
-![1571139651485](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571139651485.png)
+![1571139651485](./images/1571139651485.png)
 
 Button PlayGame 节点的 Button 组件的属性检查器界面绑定情况如下，此处绑定的 Game.js 脚本将在第 4 节中讲解：
 
-![1571135988842](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571135988842.png)
+![1571135988842](./images/1571135988842.png)
 
 Toggle OnePlayer 节点的 Toggle 组件的属性检查器界面的绑定情况如下：
 
-![1571136089188](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571136089188.png)
+![1571136089188](./images/1571136089188.png)
 
 Toggle DoublePlayer 节点的属性检查器界面的绑定情况如下：
 
-![1571136183310](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571136183310.png)
+![1571136183310](./images/1571136183310.png)
 
 为 Nodes Login Game 节点添加 CCBlockInputEvents 组件，可以防止误触到游戏战斗界面。属性检查器面板如下所示：
 
-![1571227581285](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571227581285.png)
+![1571227581285](./images/1571227581285.png)
 
 完成上述界面布局与组件数据绑定之后，就完成了游戏开始界面的搭建。
 
@@ -271,7 +271,7 @@ module.exports = NodePoolManager;
 
 在 Canvas 节点下创建 Nodes Play Game 节点，主要负责渲染坦克大战核心战斗界面。对应的页面布局以及该节点的节点树参考如下：
 
-![1571139257986](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571139257986.png)
+![1571139257986](./images/1571139257986.png)
 
 创建完节点并调整界面布局之后，在 ./assets/ 目录下创建 Game.js ,并添加到 Canvas 节点下。该脚本主要用于执行游戏初始化、处理游戏流程、处理玩家输入输出等操作。代码参考如下，我们将项目即将使用到的属性参数也写在脚本上。
 
@@ -332,15 +332,15 @@ cc.Class({
 
 组件属性检查器面板的绑定情况如下：
 
-![1571139479954](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571139479954.png)
+![1571139479954](./images/1571139479954.png)
 
 Node AnyTank 的资源路径为 . /assets/res/prefab/Node AnyTank.prefab，布局与 CCSprite 组件的属性检查器面板如下：
 
-![1571142694979](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571142694979.png)
+![1571142694979](./images/1571142694979.png)
 
 Node Buttle 的资源路径为 . /assets/res/prefab/Node Buttle.prefab，布局与 CCSprite 组件的属性检查器面板如下：
 
-![1571142724512](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571142724512.png)
+![1571142724512](./images/1571142724512.png)
 
 在 Game.js 中添加 onPlayGameButtonClicked 函数，用于开始界面的 Button PlayGame 按钮的点击回调。代码参考如下：
 
@@ -477,7 +477,7 @@ onPlayerKeyDownCallback () {},
 
 在完善玩家对坦克的控制逻辑之前，执行以上的代码之后，游戏运行效果如下：
 
-![20191015](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/20191015.gif)
+![20191015](./images/20191015.gif)
 
 游戏战斗界面正确渲染的同时，坦克们也出现在了指定的位置。
 
@@ -709,25 +709,25 @@ cc.Class({
 
 将该脚本组件添加到 Node AnyTank 预制体的 Node AnyTank 节点上，它的属性检查器界面的绑定情况如下：
 
-![1571209420292](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571209420292.png)
+![1571209420292](./images/1571209420292.png)
 
 此外，我们可以给玩家坦克的出生添加一个入场动画：
 
 首先在 Node AnyTank 节点下创建一个子节点 Sp Shield ，添加 CCSprite 组件，在 ./assets/res/texture/ 目录下找到 shield_0 贴图，将它添加到 CCSprite 组件的 SpriteFrame 属性框中，此时节点的渲染情况如下：
 
-![1571212037751](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571212037751.png)
+![1571212037751](./images/1571212037751.png)
 
 之后，将 Sprite Shield 节点的 active 勾选去掉，回到 Node AnyTank 节点，给它添加 CCAnimation 组件，并且在 ./assets/res/anima/ 目录下创建一个 animationClip 资源，命名为 start，主要用于播放坦克入场动画。CCAnimation 组件的属性检查器面板如下:
 
-![1571212575077](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571212575077.png)
+![1571212575077](./images/1571212575077.png)
 
 start 序列帧动画在动画编辑器中的设置如下，不懂得怎么使用动画编辑器的可以参考这篇文档：[Animation system](https://docs.cocos.com/creator/manual/en/animation/):
 
-![1571213607552](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571213607552.png)
+![1571213607552](./images/1571213607552.png)
 
 操作完成上述内容之后，游戏的表现如下：
 
-![20191016](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/20191016.gif)
+![20191016](./images/20191016.gif)
 
 ---
 
@@ -1009,11 +1009,11 @@ cc.Class({
 
 将该组件添加到 Canvas 节点上，下面是该组件的属性检查器面板, TiledMapAsset 资源在 ./assets/res/map 目录下：
 
-![1571217426613](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571217426613.png)
+![1571217426613](./images/1571217426613.png)
 
 完成这部分操作之后，游戏的表现如下所示：
 
-![20191017](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/20191017.gif)
+![20191017](./images/20191017.gif)
 
 ---
 
@@ -1083,13 +1083,13 @@ cc.Class({
 
 我们只需要将这个组件，添加到 Node AnyTank 预制体的 Node AnyTank 节点、Node Buttle 预制体的 Node Buttle 节点。并且给带有 ColliderManager.js 脚本组件的节点添加 CCBoxCollider 组件。属性检查器界面如下：
 
-![1571220278417](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571220278417.png)
+![1571220278417](./images/1571220278417.png)
 
-![1571220427137](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571220427137.png)
+![1571220427137](./images/1571220427137.png)
 
 完成上述操作后，子弹和坦克之间就能发生碰撞了，我们看下效果：
 
-![20191018](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/20191018.gif)
+![20191018](./images/20191018.gif)
 
 ---
 
@@ -1357,7 +1357,7 @@ cc.Class({
 
 将它添加到 Canvas 节点中，属性检查器面板如下：
 
-![1571227326639](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571227326639.png)
+![1571227326639](./images/1571227326639.png)
 
 为 Slider BGM Volume 、Slider Effect Volume 这两个 CCSlider 组件添加滑动回调，让它们每次滑动都能调节音量。在 Game.js 脚本中添加 onSliderSwitchEvent 函数，代码如下：
 
@@ -1380,9 +1380,9 @@ cc.Class({
 
 将该脚本绑定为 Slider BGM Volume 、Slider Effect Volume 这两个组件的滑动回调，属性检查器界面的绑定情况如下：
 
-![1571229153093](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571229153093.png)
+![1571229153093](./images/1571229153093.png)
 
-![1571229170529](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571229170529.png)
+![1571229170529](./images/1571229170529.png)
 
 这样就完成了游戏的音频控制操作。
 
@@ -1434,11 +1434,11 @@ cc.Class({
 
 将 onPauseOrResumeGameEvent 设置为 Button Game Pause 按钮的点击回调，属性检查器界面绑定情况如下：
 
-![1571227962953](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571227962953.png)
+![1571227962953](./images/1571227962953.png)
 
 新建一个 CCButton 组件节点命名为 Button Game Restart，为它绑定 Game.js 中的 restartGame 函数为点击结束的回调，属性检查器界面如下：
 
-![1571228602680](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571228602680.png)
+![1571228602680](./images/1571228602680.png)
 
 这样就完成了游戏的一些进程控制。
 
@@ -1450,7 +1450,7 @@ cc.Class({
 
 TankWar 的游戏开发教程在本篇完成了，看一下游戏表现（此处为了方便测试将敌方坦克的数量调整为5个）：
 
-![20191019](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/20191019.gif)
+![20191019](./images/20191019.gif)
 
 目前游戏依然存在很多的优化空间。等你完全掌握教程中所使用的工具	以及编程语言时，你就可以再进一步的在原来的基础上创造出更多有意思的内容。感谢大家对 CocosCreator 游戏引擎的热爱，本篇教程由 Cocos技术顾问团队提供。再次感谢。
 
