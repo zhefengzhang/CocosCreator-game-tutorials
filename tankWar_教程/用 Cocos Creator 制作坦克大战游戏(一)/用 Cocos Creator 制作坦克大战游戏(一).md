@@ -165,7 +165,7 @@
 
 展示一下完整demo的效果图：
 
-![](F:\TestDemo\GIF.gif)
+![](https://github.com/Jno1995/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%B8%80)/images/GIF.gif)
 
 ---
 
