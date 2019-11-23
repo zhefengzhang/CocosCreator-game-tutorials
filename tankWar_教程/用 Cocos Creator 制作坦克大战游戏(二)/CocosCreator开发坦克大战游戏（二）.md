@@ -948,7 +948,7 @@ cc.Class({
                     return false;
                 }
             }
-            //这里处理tileWall类型图块
+            //这里处理tileSteel类型图块
             else if (GameConst.GidToTileType[tileGID] === GameEnum.TileType.tileSteel) {
                 if (tileNode.group === cc.game.groupList[1] || tileNode.group === cc.game.groupList[4]) {
                     //播放steel音效，这部分在第9节中讲解
@@ -960,11 +960,13 @@ cc.Class({
                     return false;
                 }
             }
+	    //这里处理tileRiver类型图块
             else if (GameConst.GidToTileType[tileGID] === GameEnum.TileType.tileRiver) {
                 if (tileNode.group === cc.game.groupList[2] || tileNode.group === cc.game.groupList[3]) {
                     return false;
                 }
             }
+	    //这里处理tileKing类型图块
             else if (GameConst.GidToTileType[tileGID] === GameEnum.TileType.tileKing) {
                 if (tileNode.group === cc.game.groupList[1] || tileNode.group === cc.game.groupList[4]) {
                     //执行游戏结束逻辑
@@ -1144,7 +1146,7 @@ onGameOverEvent 函数代码如下：
     onGameOverEvent (command) {
         //更新游戏状态
         this._playing = false;
-        //根据指定执行不同的逻辑
+        //根据指令执行不同的逻辑
         if (command === "win") {
             //播放 begin 音效
             this.node.getComponent("SoundManager").playEffectSound("begin", false);
