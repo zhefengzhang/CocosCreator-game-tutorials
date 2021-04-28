@@ -109,7 +109,7 @@ module.exports = GameEnum;
 
 打开 CocosCreator 游戏引擎的编辑器，打开菜单 Project -> Project Settings...，选择 Group Manager 界面，对游戏的 Group 进行如下设置，并点击 Save 保存设置：
 
-![1571218274828](./images/1571218274828.png)
+https://github.com/zhefengzhang/CocosCreator-game-tutorials/blob/master/tankWar_%E6%95%99%E7%A8%8B/%E7%94%A8%20Cocos%20Creator%20%E5%88%B6%E4%BD%9C%E5%9D%A6%E5%85%8B%E5%A4%A7%E6%88%98%E6%B8%B8%E6%88%8F(%E4%BA%8C)/images/1571218274828.png
 
  cc.game.groupList 负责记录着当前游戏的 group 分组数据，我们需要用到它。
 
